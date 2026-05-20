@@ -1,1 +1,5 @@
+budgetly_api\entity\User.class
 budgetly_api\BudgetlyApiApplication.class
+budgetly_api\entity\User$UserBuilder.class
+budgetly_api\repository\UserRepository.class
+budgetly_api\entity\Role.class
