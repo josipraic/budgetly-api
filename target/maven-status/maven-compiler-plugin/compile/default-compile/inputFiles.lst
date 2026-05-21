@@ -2,6 +2,7 @@ C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\Budge
 C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\config\ApplicationConfig.java
 C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\controller\AuthController.java
 C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\dto\AuthResponse.java
+C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\dto\LoginRequest.java
 C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\dto\RegisterRequest.java
 C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\entity\Role.java
 C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\entity\User.java

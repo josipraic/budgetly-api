@@ -1,6 +1,7 @@
 package budgetly_api.controller;
 
 import budgetly_api.dto.AuthResponse;
+import budgetly_api.dto.LoginRequest;
 import budgetly_api.dto.RegisterRequest;
 import budgetly_api.service.AuthService;
 import lombok.RequiredArgsConstructor;
@@ -22,4 +23,12 @@ public class AuthController {
 
         return new AuthResponse(message);
     }
+
+    @PostMapping("/login")
+    public AuthResponse login(@RequestBody LoginRequest request) {
+        String message = authService.login(request);
+
+        return new AuthResponse(message);
+    }
+
 }

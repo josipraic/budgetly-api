@@ -1,5 +1,6 @@
 package budgetly_api.service;
 
+import budgetly_api.dto.LoginRequest;
 import budgetly_api.dto.RegisterRequest;
 import budgetly_api.entity.Role;
 import budgetly_api.entity.User;
@@ -30,5 +31,15 @@ public class AuthService {
         userRepository.save(user);
 
         return "User registered successfully";
+    }
+
+    public String login(LoginRequest request) {
+        User user = userRepository.findByEmail(request.getEmail())
+                .orElseThrow(() -> new RuntimeException("Invalid email or password"));
+
+        if (!passwordEncoder.matches(request.getPasssword(), user.getPassword())) {
+            throw new RuntimeException("Invalid email or password");
+        }
+        return "Login successful";
     }
 }
