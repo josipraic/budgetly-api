@@ -1,11 +1,12 @@
-budgetly_api\config\ApplicationConfig.class
+budgetly_api\security\JwtService.class
 budgetly_api\dto\AuthResponse.class
 budgetly_api\dto\LoginRequest.class
 budgetly_api\service\AuthService.class
+budgetly_api\repository\UserRepository.class
+budgetly_api\controller\AuthController.class
+budgetly_api\config\ApplicationConfig.class
 budgetly_api\entity\User.class
 budgetly_api\BudgetlyApiApplication.class
-budgetly_api\repository\UserRepository.class
 budgetly_api\entity\User$UserBuilder.class
 budgetly_api\dto\RegisterRequest.class
-budgetly_api\controller\AuthController.class
 budgetly_api\entity\Role.class

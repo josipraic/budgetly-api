@@ -5,6 +5,7 @@ import budgetly_api.dto.RegisterRequest;
 import budgetly_api.entity.Role;
 import budgetly_api.entity.User;
 import budgetly_api.repository.UserRepository;
+import budgetly_api.security.JwtService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -15,6 +16,7 @@ public class AuthService {
 
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
+    private final JwtService jwtService;
 
     public String register(RegisterRequest request) {
         if(userRepository.existByEmail(request.getEmail())) {
@@ -28,9 +30,9 @@ public class AuthService {
                 .role(Role.USER)
                 .build();
 
-        userRepository.save(user);
+        User savedUser = userRepository.save(user);
 
-        return "User registered successfully";
+        return jwtService.generateToken(savedUser);
     }
 
     public String login(LoginRequest request) {
@@ -40,6 +42,6 @@ public class AuthService {
         if (!passwordEncoder.matches(request.getPasssword(), user.getPassword())) {
             throw new RuntimeException("Invalid email or password");
         }
-        return "Login successful";
+        return jwtService.generateToken(user);
     }
 }
