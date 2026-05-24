@@ -4,6 +4,7 @@ budgetly_api\dto\LoginRequest.class
 budgetly_api\service\AuthService.class
 budgetly_api\config\SecurityCofing.class
 budgetly_api\repository\UserRepository.class
+budgetly_api\security\JwtAuthenticationFilter.class
 budgetly_api\controller\AuthController.class
 budgetly_api\config\ApplicationConfig.class
 budgetly_api\entity\User.class

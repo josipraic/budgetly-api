@@ -8,5 +8,6 @@ C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\dto\R
 C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\entity\Role.java
 C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\entity\User.java
 C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\repository\UserRepository.java
+C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\security\JwtAuthenticationFilter.java
 C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\security\JwtService.java
 C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\service\AuthService.java
