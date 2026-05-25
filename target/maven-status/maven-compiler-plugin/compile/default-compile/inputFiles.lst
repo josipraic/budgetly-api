@@ -5,8 +5,10 @@ C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\contr
 C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\dto\AuthResponse.java
 C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\dto\LoginRequest.java
 C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\dto\RegisterRequest.java
+C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\entity\Category.java
 C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\entity\Role.java
 C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\entity\User.java
+C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\repository\CategoryRepository.java
 C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\repository\UserRepository.java
 C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\security\JwtAuthenticationFilter.java
 C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\security\JwtService.java
