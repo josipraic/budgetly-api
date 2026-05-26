@@ -2,7 +2,9 @@ C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\Budge
 C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\config\ApplicationConfig.java
 C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\config\SecurityCofing.java
 C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\controller\AuthController.java
+C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\controller\CategoryController.java
 C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\dto\AuthResponse.java
+C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\dto\CategoryRequest.java
 C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\dto\LoginRequest.java
 C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\dto\RegisterRequest.java
 C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\entity\Category.java
@@ -13,3 +15,4 @@ C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\repos
 C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\security\JwtAuthenticationFilter.java
 C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\security\JwtService.java
 C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\service\AuthService.java
+C:\Users\jraic\source\budgetly-api\budgetly-api\src\main\java\budgetly_api\service\CategoryService.java
