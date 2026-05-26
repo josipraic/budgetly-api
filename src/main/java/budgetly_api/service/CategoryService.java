@@ -42,4 +42,21 @@ public class CategoryService {
 
         return categoryRepository.findByUser(user);
     }
+
+    public void deleteCategory(Long id) {
+
+        String email = SecurityContextHolder.getContext().getAuthentication().getName();
+
+        User user = userRepository.findByEmail(email)
+                .orElseThrow(() -> new RuntimeException("User not found"));
+
+        Category category = categoryRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Category not found"));
+
+        if (!category.getUser().getId().equals(user.getId())) {
+            throw new RuntimeException("You are not allowed to delete this category");
+        }
+
+        categoryRepository.delete(category);
+    }
 }
