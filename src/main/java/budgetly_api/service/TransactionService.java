@@ -58,4 +58,21 @@ public class TransactionService {
 
         return transactionRepository.findByUser(user);
     }
+
+    public void deleteTransaction(Long id) {
+
+        String email = SecurityContextHolder.getContext().getAuthentication().getName();
+
+        User user = userRepository.findByEmail(email)
+                .orElseThrow(() -> new RuntimeException("User not found"));
+
+        Transaction transaction = transactionRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Transaction not found"));
+
+        if (!transaction.getUser().getId().equals(user.getId())) {
+            throw new RuntimeException("You are not allowed to delete this transaction");
+        }
+
+        transactionRepository.delete(transaction);
+    }
 }
