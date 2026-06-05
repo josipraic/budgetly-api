@@ -19,7 +19,7 @@ public class AuthService {
     private final JwtService jwtService;
 
     public String register(RegisterRequest request) {
-        if(userRepository.existByEmail(request.getEmail())) {
+        if(userRepository.existsByEmail(request.getEmail())) {
             throw new RuntimeException("Email allready exists");
         }
 
@@ -39,7 +39,7 @@ public class AuthService {
         User user = userRepository.findByEmail(request.getEmail())
                 .orElseThrow(() -> new RuntimeException("Invalid email or password"));
 
-        if (!passwordEncoder.matches(request.getPasssword(), user.getPassword())) {
+        if (!passwordEncoder.matches(request.getPassword(), user.getPassword())) {
             throw new RuntimeException("Invalid email or password");
         }
         return jwtService.generateToken(user);
